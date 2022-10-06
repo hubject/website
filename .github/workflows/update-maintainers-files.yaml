@@ -10,13 +10,13 @@ jobs:
   updateMaintainers:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.1.0
       - name: Set up Python
         uses: actions/setup-python@v2.3.1
         with:
           python-version: 3.8
       - name: Checkout community repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.1.0
         with:
           repository: fluxcd/community
           path: temp
